@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "ms-python.black-formatter",
+    "cheshirekow.cmake-format",
+    "josetr.cmake-language-support-vscode",
+    "llvm-vs-code-extensions.vscode-clangd",
+    "matepek.vscode-catch2-test-adapter",
+    "ms-azuretools.vscode-docker",
+    "ms-python.python",
+    "ms-vscode.cmake-tools",
+    "ms-vscode.cpptools",
+    "vadimcn.vscode-lldb",
+    "xaver.clang-format"
+  ]
+}

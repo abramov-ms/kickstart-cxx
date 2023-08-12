@@ -1,0 +1,9 @@
+out/
+compile_commands.json
+
+# clangd
+.cache/
+
+# conan
+venv/
+ConanPresets.json

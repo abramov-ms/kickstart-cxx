@@ -1,0 +1,11 @@
+Checks: >-
+  bugprone-*,
+  readability-*,
+  performance-*,
+  portability-*,
+  modernize-*,
+  misc-*,
+  -modernize-use-trailing-return-type,
+  -modernize-use-nodiscard,
+  -misc-no-recursion
+HeaderFilterRegex: '\.hpp$'

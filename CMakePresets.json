@@ -1,0 +1,72 @@
+{
+  "version": 4,
+  "include": [
+    "./ConanPresets.json"
+  ],
+  "configurePresets": [
+    {
+      "name": "dev",
+      "hidden": true,
+      "cacheVariables": {
+        "KICKSTART_DEVELOPER": "ON",
+        "KICKSTART_ASSERTIONS": "ON"
+      }
+    },
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "inherits": [
+        "dev"
+      ],
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "cacheVariables": {
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      },
+      "binaryDir": "${sourceDir}/out/build/${presetName}"
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "inherits": [
+        "base",
+        "conan-debug"
+      ]
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "inherits": [
+        "base",
+        "conan-release"
+      ]
+    },
+    {
+      "name": "asan",
+      "displayName": "ASan",
+      "inherits": [
+        "debug"
+      ],
+      "cacheVariables": {
+        "ASAN": "ON",
+        "UBSAN": "ON"
+      }
+    },
+    {
+      "name": "tsan",
+      "displayName": "TSan",
+      "inherits": [
+        "debug"
+      ],
+      "cacheVariables": {
+        "TSAN": "ON",
+        "UBSAN": "ON"
+      }
+    }
+  ]
+}
