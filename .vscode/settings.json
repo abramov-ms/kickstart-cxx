@@ -43,5 +43,9 @@
   },
   "black-formatter.args": [
     "--line-length=100"
-  ]
+  ],
+
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
