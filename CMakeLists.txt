@@ -17,4 +17,5 @@ option(KICKSTART_DEVELOPER "Developer mode" OFF)
 option(KICKSTART_ASSERTIONS "Enable assertions" OFF)
 option(KICKSTART_TESTS "Build tests" OFF)
 
+add_subdirectory(libkickstart)
 add_subdirectory(kickstart)

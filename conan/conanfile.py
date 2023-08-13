@@ -9,6 +9,7 @@ class Kickstart(ConanFile):
 
     def requirements(self):
         self.requires("fmt/10.0.0")
+        self.requires("gtest/1.14.0")
 
     def layout(self):
         self.folders.root = ".."

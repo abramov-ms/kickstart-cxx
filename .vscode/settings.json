@@ -25,7 +25,8 @@
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "clangd.arguments": [
-    "-header-insertion=never"
+    "-header-insertion=never",
+    "--compile-commands-dir=${workspaceFolder}"
   ],
 
   "cmake.languageSupport.dotnetPath": "/usr/bin/dotnet",
