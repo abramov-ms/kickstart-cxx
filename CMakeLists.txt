@@ -12,6 +12,7 @@ include(cmake/ArtifactNaming.cmake)
 include(cmake/CompileOptions.cmake)
 include(cmake/StdLibrary.cmake)
 include(cmake/Sanitize.cmake)
+include(cmake/Coverage.cmake)
 include(cmake/PrintDiagnostics.cmake)
 
 option(KICKSTART_DEVELOPER "Developer mode" OFF)

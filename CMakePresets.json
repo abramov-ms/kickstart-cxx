@@ -67,6 +67,16 @@
         "TSAN": "ON",
         "UBSAN": "ON"
       }
+    },
+    {
+      "name": "coverage",
+      "displayName": "Coverage",
+      "inherits": [
+        "debug"
+      ],
+      "cacheVariables": {
+        "COVERAGE": "ON"
+      }
     }
   ]
 }
