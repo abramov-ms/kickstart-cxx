@@ -15,4 +15,4 @@ lcov --extract "${INFO_FILE}" '/kickstart/*' --output-file "${INFO_FILE}"
 lcov --remove "${INFO_FILE}" '**/tests/*' --output-file "${INFO_FILE}"
 
 genhtml --output-directory "${COVERAGE_DIR}/report" --show-details --no-prefix \
-  --demangle-cpp "${INFO_FILE}"
+  --demangle-cpp --branch-coverage "${INFO_FILE}"
