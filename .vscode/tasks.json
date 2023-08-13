@@ -4,13 +4,13 @@
     {
       "label": "Clear coverage data",
       "type": "shell",
-      "command": "${workspaceFolder}/coverage/clear-coverage.sh",
+      "command": "${workspaceFolder}/coverage/clear.sh",
       "problemMatcher": [ ]
     },
     {
       "label": "Make coverage report",
       "type": "shell",
-      "command": "${workspaceFolder}/coverage/collect-coverage.sh",
+      "command": "${workspaceFolder}/coverage/collect.sh",
       "problemMatcher": [ ]
     }
   ]
