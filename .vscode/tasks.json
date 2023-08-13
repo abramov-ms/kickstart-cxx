@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Clear coverage data",
+      "type": "shell",
+      "command": "${workspaceFolder}/coverage/clear-coverage.sh",
+      "problemMatcher": [ ]
+    },
+    {
+      "label": "Make coverage report",
+      "type": "shell",
+      "command": "${workspaceFolder}/coverage/collect-coverage.sh",
+      "problemMatcher": [ ]
+    }
+  ]
+}
