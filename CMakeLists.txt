@@ -8,6 +8,7 @@ project(
 )
 
 include(cmake/Logging.cmake)
+include(cmake/ArtifactNaming.cmake)
 include(cmake/CompileOptions.cmake)
 include(cmake/StdLibrary.cmake)
 include(cmake/Sanitize.cmake)
