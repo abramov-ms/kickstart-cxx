@@ -10,7 +10,7 @@
     {
       "label": "Make coverage report",
       "type": "shell",
-      "command": "${workspaceFolder}/coverage/collect.sh",
+      "command": "${workspaceFolder}/coverage/report.sh",
       "problemMatcher": [ ]
     }
   ]
